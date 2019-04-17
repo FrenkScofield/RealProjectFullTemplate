@@ -1,0 +1,188 @@
+var searchBtn = document.querySelector('#search');
+var mainContents = document.querySelector('main#contents');
+var menuBtn = document.querySelector('button[id="menu"]');
+var asideLeft = document.querySelector('aside#left');
+var nav_spans;
+var simplify = document.getElementById('simplify');
+var mainTitle = document.getElementById('addTitle');
+var pophumTable = document.getElementById('keyNotsSelectItem');
+var bgModal = document.getElementsByClassName('bg-modal');
+var profile = document.getElementById('profile_picture');
+var profileOverlay = document.getElementById("profile-overlay");
+var profile_dropDown = document.getElementById('profile-dropdown');
+
+profile.addEventListener('click', showProfileDropdown);
+
+function showProfileDropdown() {
+    var profile_dropDown = document.getElementById('profile-dropdown');
+    if (!profile_dropDown.classList.contains('hide')) {
+        profile_dropDown.classList.add('hide');
+    } else {
+        profile_dropDown.classList.remove('hide');
+        profileOverlay.classList.remove("hide");
+    }
+}
+$("#profile-overlay").click(function (e) {
+    profile_dropDown.classList.add('hide');
+    profileOverlay.classList.add("hide");
+    
+})
+//NAVBAR CILCK HOVR LEFT RIGHT
+$(document).ready(function () {
+    nav_spans = document.querySelectorAll('aside#left #nav li div div > i + span');
+})
+// search input enable-disable
+function SlideSearchInput() {
+    var search_input = document.querySelector('input[name="search"]');
+    if (search_input.classList.contains('d-inline-block')) {
+        search_input.classList.remove('d-inline-block');
+    } else {
+        search_input.classList.add('d-inline-block');
+    }
+}
+
+//searchBtn.addEventListener('click', SlideSearchInput);
+asideLeft.addEventListener('mouseover', function () {
+    for (const iterator of nav_spans) {
+
+        iterator.style.display = "";
+    }
+    simplify.style.display = "";
+    
+   /*This project is the frontend and the design software Frank Schofield code specific to forensic developer. Date year 2018. hours 13:28. */
+})
+asideLeft.addEventListener('mouseleave', function () {
+    if(window.innerWidth > 1200){
+        if (asideLeft.classList.contains('shorten')) {
+            for (const iterator of nav_spans) {
+                iterator.style.display = "block";
+            }
+            simplify.style = 'display:none';
+        }
+    }
+
+})
+
+window.addEventListener("resize", function () {
+    var menuBtnContainer = document.querySelector('main#contents header>div.left');
+
+    if (window.innerWidth <= 1199 && window.innerWidth >= 992) {
+        if (menuBtnContainer.style["transform"] == "translate(238px, 0px)") {
+            menuBtnContainer.style = 'transform:translate(255px,0)';
+        }
+    } else if (window.innerWidth <= 991) {
+        if (menuBtnContainer.style["transform"] == "translate(255px, 0px)") {
+            menuBtnContainer.style = 'transform:translate(238px,0)';
+        }
+    } else {
+        if (menuBtnContainer.style["transform"] != null) {
+            menuBtnContainer.style = '';
+            asideLeft.style ='';
+        }
+    }
+})
+function SlideAside() {
+    var body = document.querySelector('body');
+    var menuBtnContainer = document.querySelector('main#contents header>div.left');
+
+    if (body.clientWidth <= 1199 && body.clientWidth >= 992) {
+        if (asideLeft.offsetLeft === -255) {
+            asideLeft.style = 'left:0;';
+            menuBtnContainer.style = 'transform:translate(255px,0)';
+        } else {
+            asideLeft.style = '';
+            menuBtnContainer.style = '';
+        }
+    } else if (body.clientWidth <= 991) {
+        if (asideLeft.offsetLeft === -238) {
+            asideLeft.style = 'left:0;';
+            menuBtnContainer.style = 'transform:translate(238px,0)';
+        } else {
+            asideLeft.style = '';
+            menuBtnContainer.style = '';
+        }
+    } else {
+        if (asideLeft.classList.contains('shorten')) {
+            asideLeft.classList.remove('shorten');
+            mainContents.classList.remove('widen');
+            for (const iterator of nav_spans) {
+                iterator.style.display = "";
+            }
+            simplify.style = "";
+        } else {
+            asideLeft.classList.add('shorten');
+            for (const iterator of nav_spans) {
+                iterator.style.display = "none";
+            }
+            mainContents.classList.add('widen');
+            simplify.style = 'display:none';
+        }
+    }
+}
+
+menuBtn.addEventListener('click', SlideAside);
+
+//input into menu icon click it time. code you want select  after continuo you code select.[FUNCTION]
+
+let whoOpened = null;
+
+document.getElementById('selectInportantNote').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "flex";
+    whoOpened = "esasVesaidOzelCode";
+});
+
+document.querySelector('.close').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "none";
+});
+
+document.getElementById('selectInportantInput1').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "flex";
+    whoOpened = "esasVesaidCode";
+});
+
+document.querySelector('.close').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "none";
+});
+
+document.getElementById('selectInportantInput2').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "flex";
+    whoOpened = "esasVesaidName";
+});
+
+document.querySelector('.close').addEventListener("click", function () {
+    document.querySelector('.bg-modal').style.display = "none";
+});
+
+for (var i = 1; i < pophumTable.rows.length; i++) {
+    pophumTable.rows[i].onclick = function () {
+        //rIndex = this.rowIndex;
+        document.getElementById(whoOpened).value = this.cells[1].innerHTML;
+        $(bgModal).css("display", "none");
+    }
+}
+
+for (var i = 1; i < pophumTable.rows.length; i++) {
+    pophumTable.rows[i].onclick = function () {
+        //rIndex = this.rowIndex;
+        document.getElementById(whoOpened).value = this.cells[2].innerHTML;
+        $(bgModal).css("display", "none");
+    }
+}
+
+for (var i = 1; i < pophumTable.rows.length; i++) {
+    pophumTable.rows[i].onclick = function () {
+        //rIndex = this.rowIndex;
+        document.getElementById(whoOpened).value = this.cells[2].innerHTML;
+        $(bgModal).css("display", "none");
+    };
+}
+//header search icon onclick time run function
+var searchTitle = document.getElementById('axtaris');
+function iconlup(){
+   
+    $(searchTitle).css("width","200px");
+}
+searchTitle.addEventListener('mouseleave',iconBack);
+function iconBack(){
+    $(searchTitle).css("width",'');
+}

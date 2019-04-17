@@ -1,0 +1,390 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <title>Simplify Admin</title>
+    <link rel="icon" type="image/ico" href="images/logo/title-logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="Css/adminStyle.css">
+</head>
+
+<body style="user-select: none">
+
+    <aside id="left" data-simplebar>
+        <header id="site-label" class="bg-1 d-flex align-items-center justify-content-between">
+            <span id="simplify">Simplify Admin</span>
+            <i id="logo" class="material-icons p-2">all_inclusive</i>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li id="esas_qeydler">
+                    <div class="d-flex align-items-center justify-content-between pointer theme-dark nav-links-container"
+                        data-toggle="collapse" href="#nav-commerce-links">
+                        <div class="d-flex align-items-center">
+                            <i class="material-icons">library_books </i>
+                            <span>ESAS QEYDLER</span>
+                        </div>
+                        <i class="material-icons plus-icon">add</i>
+                    </div>
+                    <div id="nav-commerce-links" class="collapse" data-parent="#nav">
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <a href="Fixed assets.html"><span>Esas vesaitler</span></a>
+                        </div>
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <a href="Types.html"><span>Tipler</span></a>
+                        </div>
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <a href="Brends.html"><span>Markalar</span></a>
+                        </div>
+                        <div data-toggle="collapse" href="#adresler" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Adresler</span>
+                        </div>
+                        <div id="adresler" class="collapse" data-parent="#esas_qeydler">
+                            <a href="Addresses.html" class="d-flex align-items-center theme-dark nav-link">
+                                <i class="material-icons arrow">keyboard_arrow_right</i>
+                                <span>Adresler</span>
+                            </a>
+                            <a href="AddressItem.html" class="d-flex align-items-center theme-dark nav-link">
+                                <i class="material-icons arrow">keyboard_arrow_right</i>
+                                <span>Adres item</span>
+                            </a>
+                            <a href="addressAuthority.html" class="d-flex align-items-center theme-dark nav-link">
+                                <i class="material-icons arrow">keyboard_arrow_right</i>
+                                <span>Adres yetkisi</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </li>
+                <!-- login & signup -->
+                <li>
+                    <div class="d-flex align-items-center justify-content-between pointer theme-dark nav-links-container"
+                        data-toggle="collapse" href="#nav-login_signup-links">
+                        <div class="d-flex align-items-center">
+                            <!--For modern browsers-->
+
+                            <i class="material-icons">bar_chart </i>
+                            <span>HEREKETLER</span>
+                        </div>
+                        <i class="material-icons plus-icon">add</i>
+                    </div>
+                    <div id="nav-login_signup-links" class="collapse" data-parent="#nav">
+                        <a href="Census.html" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Sayim</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Zimmet</span>
+                        </a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex align-items-center justify-content-between pointer theme-dark nav-links-container"
+                        data-toggle="collapse" href="#nav-bonuspages-links">
+                        <div class="d-flex align-items-center">
+                            <!--For modern browsers-->
+
+                            <i class="material-icons"> show_chart </i>
+                            <span>HESBATLAR</span>
+                        </div>
+                        <i class="material-icons plus-icon">add</i>
+                    </div>
+                    <div id="nav-bonuspages-links" class="collapse" data-parent="#nav">
+                        <a href="#" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Search Results</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Account Settings</span>
+                        </a>
+                    </div>
+                </li>
+                <!-- email -->
+                <li>
+                    <div class="d-flex align-items-center justify-content-between pointer theme-dark nav-links-container"
+                        data-toggle="collapse" href="#nav-email-links">
+                        <div class="d-flex align-items-center">
+                            <!--For modern browsers-->
+                            <i class="material-icons"> people </i>
+                            <span>ISDIFADECILER</span>
+                        </div>
+                        <i class="material-icons plus-icon">add</i>
+                    </div>
+                    <div id="nav-email-links" class="collapse" data-parent="#nav">
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <a href="Users.html"><span>Isdifadeciler</span></a>
+                        </div>
+
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <a href="userAuthorization.html"><span>Isdifadeci yetkisi</span></a>
+                        </div>
+
+                        <div data-toggle="collapse" href="#mallar" class="d-flex align-items-center theme-dark nav-link pointer">
+                                <i class="material-icons arrow">keyboard_arrow_right</i>
+                                <a href="mobileUsers.html"><span>Mobil isdifadeciler</span></a>
+                            </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex align-items-center justify-content-between pointer theme-dark nav-links-container"
+                        data-toggle="collapse" href="#nav-charts-link">
+                        <div class="d-flex align-items-center">
+                            <i class="material-icons">
+                                phonelink
+                            </i>
+                            <span>TENZIMLEYICI</span>
+                        </div>
+                        <i class="material-icons plus-icon">add</i>
+                    </div>
+                    <div id="nav-charts-link" class="collapse" data-parent="#nav">
+                        <a href="#" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Mobil tenzimleme</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center theme-dark nav-link">
+                            <i class="material-icons arrow">keyboard_arrow_right</i>
+                            <span>Web tenzimleme</span>
+                        </a>
+
+                    </div>
+                </li>
+
+        </nav>
+
+    </aside>
+    <main id="contents">
+        <header class="d-flex align-items-center justify-content-between">
+            <!-- menu side -->
+            <div class="d-flex align-items-center h-100 left">
+                <button id="menu" class="pointer">
+                    <i class="material-icons">menu</i>
+                </button>
+                <span>Home</span>
+            </div>
+            <div class="h-100 d-flex align-items-center" style='position:relative'>
+                <div>
+                    <div class="d-flex align-items-center right">
+                        <div id="search" class="d-flex align-items-center mr-2 h-100">
+                            <input type="search" name="search" placeholder="Search">
+                            <button class="d-flex align-items-center px-2 h-100 pointer">
+
+                            </button>
+                        </div>
+                        <div class="col-3 search">
+                            <form class="input">
+
+                            </form>
+                            <div class="shorcicon">
+                                <i class="fas fa-search lupa zoom" onmouseover="iconlup()"></i>
+                                <form action="#" method="GET" class="main-search">
+                                    <input type="search" placeholder="Search" id="axtaris">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <span style="color:#b5b5b5">
+                        Kamran Alibayli
+                    </span>
+                    <img id='profile_picture' class="pointer"
+                        src="https://img.icons8.com/ios/100/000000/user-male-circle.png" alt='Kamran_Alibeyli_Picture'>
+                </div>
+                <div id='profile-dropdown' class='hide'>
+                    <ul>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-primary">My account</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-primary">Sinn up</button></a>                        
+                        </li>
+                    </ul>
+                </div>
+                <div id="profile-overlay" class="hide"></div>
+            </div>
+            </div>
+        </header>
+        <section class="home-page isdifadeciler">
+            <div class="container-fluid">
+                <div class="addTitle" id="addTitle">
+                    <p>MOBAYL ISDIFADECILER</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rightClickBox" id="rightClickBox">
+                            <table id="maintable" class="userTable">
+                                <tr class="static-tr-name">
+                                    <th>
+                                        <form action="#"><input type="checkbox" name="click"> <span>ALL</span></form>
+                                    </th>
+                                    <th>AD</th>
+                                    <th>SOYA AD</th>
+                                    <th>ISDIFADECI ADI</th>
+                                    <th>TEL</th>
+                                    <th>CODE</th>
+                                    <th>PAROL</th>
+                                    <th>STATUS</th>
+                                    
+                                </tr>
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+                                <tr class="static-tr-name-child">
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>dasdas</td>
+                                    <td>aasds</td>
+                                    <td>aasds</td>
+                                    <td>adsd</td>
+                                    <td>
+                                        <form action="#"><input type="checkbox" name="click"></form>
+
+                                </tr>
+                            </table>
+                            <ul class="rightmenu off">
+                                <li class="rightMenuItem"><a href="mobileAddUsers.html">Elave et</a></li>
+                                <li class="rightMenuItem"><a href="#">Deyistir</a> </li>
+                                <li class="rightMenuItem" id="historyBtn"><a href="#">Tarixce</a></li>
+                                <li class="rightMenuItem"><a href="#">Sil</a></li>
+                            </ul>
+                            <div class="bg-modal">
+                                    <div class="modal-contents">
+                                
+                                        <div class="close">+</div>
+                                        <div class="historyWindow">
+                                                <div class="row">
+                                                        <div class="col-6">
+                                                                <span>Elave eden</span>
+                                                                <div class="moreAboutContainer">
+                                                                        <p>Ad.</p>
+                                                                        <p class="moreAbout">Amil Abdullazade</p>
+                                                                 <p>Tarix.</p>
+                                                                        <p class="moreAbout">03.31.2057</p>
+                                                                </div>   
+                                                            </div>
+                                                            <div class="col-6">
+                                                                    <span>Son deyisen</span>
+                                                                    <div class="moreAboutContainer">
+                                                                            <p>Ad.</p>
+                                                                            <p class="moreAbout">Umid Rahimov</p>
+                                                                     <p>Tarix.</p>
+                                                                            <p class="moreAbout">06.23.2057</p>
+                                                                    </div>
+                                                            </div>
+ <!-- 
+    This project is the frontend and the design software Frank Schofield code specific to forensic developer. Date year 2018. hours 13:28.
+-->                                                   
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <aside id="right">
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+    <script src="Js/mobileUsers.js"></script>
+</body>
+
+</html>
